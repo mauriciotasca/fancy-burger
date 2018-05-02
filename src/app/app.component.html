@@ -14,7 +14,7 @@
       </div>
     </section>
   </header>
-  <div class="empty">
+  <div class="empty" *ngIf="shouldDisplayBlankState">
     <p class="empty-title h5">Welcome to {{title}}</p>
     <p class="empty-subtitle">The classiest burgers in town </p>
     <div class="empty-action">
