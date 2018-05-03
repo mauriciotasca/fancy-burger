@@ -5,15 +5,15 @@
   </div>
 
   <div class="column col-9 col-sm-12">
-    <div class="tile">
+    <div *ngFor="let meal of meals" class="tile">
       <div class="tile-icon">
         <figure class="avatar avatar-lg">
-          <img class="p-1" src="assets/img/regular_burger.png" alt="regular burger">
+          <img class="p-1" [src]="meal.thumbnail" alt="regular burger">
         </figure>
       </div>
       <div class="tile-content">
-        <p class="tile-title">Regular burger</p>
-        <p class="tile-subtitle text-gray">1 pound Certified Angus Beef ® ground chuck. kosher salt, black pepper, onion powder, garlic powder, paprika, cayenne, sweet onion</p>
+        <p class="tile-title">{{meal.name}}</p>
+        <p class="tile-subtitle text-gray">{{meal.description}}</p>
       </div>
     </div>
   </div>

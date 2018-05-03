@@ -9,17 +9,22 @@ import {MealsService} from './meals.service';
 })
 export class MealsComponent implements OnInit {
 
+  public meals: any;
+
   constructor(private mealsService: MealsService) {
+    this.getMeals();
   }
 
-  ngOnInit() {
+  getMeals() {
     this.mealsService.getMeals().subscribe(
-      (data) => {
-        console.log(data);
+      (response: any) => {
+        this.meals = response.data;
       },
       (error) => {
         console.log(`Error while fetching meals! ${error.toString()}`);
       });
   }
 
+  ngOnInit() {
+  }
 }
