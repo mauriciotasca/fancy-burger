@@ -1,11 +1,11 @@
 <div class="container grid-lg">
   <header class="navbar my-2">
     <section class="navbar-section">
-      <a href="#" class="navbar-brand mr-2">{{title}}</a>
-      <a href="#" class="btn btn-link">Meals</a>
-      <a href="#" class="btn btn-link">Drinks</a>
-      <a href="#" class="btn btn-link">Desserts</a>
-      <a href="https://github.com/picturepan2/spectre" class="btn btn-link">Contact</a>
+      <a href="/" class="navbar-brand mr-2">{{title}}</a>
+      <button class="btn btn-link" (click)="toggleMealsDisplay(!shouldDisplayMeals)">Meals</button>
+      <button class="btn btn-link">Drinks</button>
+      <button class="btn btn-link">Desserts</button>
+      <button class="btn btn-link">Contact</button>
     </section>
     <section class="navbar-section">
       <div class="input-group input-inline">
@@ -14,6 +14,9 @@
       </div>
     </section>
   </header>
+
+  <app-meals *ngIf="shouldDisplayMeals"></app-meals>
+
   <div class="empty" *ngIf="shouldDisplayBlankState">
     <p class="empty-title h5">Welcome to {{title}}</p>
     <p class="empty-subtitle">The classiest burgers in town </p>

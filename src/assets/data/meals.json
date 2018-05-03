@@ -1,0 +1,15 @@
+{
+  "data":[
+    {"thumbnail": "assets/img/regular_burger.png", "name": "Regular Burger", "description": "1 pound Certified Angus Beef ® ground chuck. kosher salt, black pepper, onion powder, garlic powder, paprika, cayenne, sweet onion"},
+    {"thumbnail": "assets/img/chicken_burger.png", "name": "Chicken Burger", "description": "Burger buns, Tyson® Individually Frozen Thin Sliced Boneless Skinless Chicken Breasts, bacon, tomato, avocado, red onion, watercress, mayo, ketchup & mustard"},
+    {"thumbnail": "assets/img/pig_patty.png", "name": "Pig patty", "description": "Soft brioche hamburger buns, cut in half, garlic, unsalted butter, softened, smoked bacon, ground beef (80/20 blend),Mornay Sauce, yellow American cheese, vidalia onion, heirloom tomato, iceberg lettuce"},
+    {"thumbnail": "assets/img/truffle_fries.png", "name": "Truffle Fries", "description": "2 ½ pounds russet potatoes, extra virgin olive oil, sea salt, freshly ground black pepper, truffle oil, parsley, grated parmesan cheese"}
+  ]
+}
+
+
+
+
+
+
+
