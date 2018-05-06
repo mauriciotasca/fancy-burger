@@ -23,17 +23,7 @@
   </div>
 
   <div class="column col-9 col-sm-12">
-    <div *ngFor="let meal of meals" class="tile">
-      <div class="tile-icon">
-        <figure class="avatar avatar-lg">
-          <img class="p-1" [src]="meal.thumbnail" alt="regular burger">
-        </figure>
-      </div>
-      <div class="tile-content">
-        <p class="tile-title">{{meal.name}}</p>
-        <p class="tile-subtitle text-gray">{{meal.description}}</p>
-      </div>
-    </div>
+  <app-item-list [items]="meals"></app-item-list>
   </div>
 </div>
 
