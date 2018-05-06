@@ -5,15 +5,25 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MealsComponent } from './meals/meals.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ItemListComponent } from './shared/item-list/item-list.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DrinksComponent } from './drinks/drinks.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MealsComponent
+    MealsComponent,
+    ItemListComponent,
+    DrinksComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

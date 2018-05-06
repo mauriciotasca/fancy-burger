@@ -1,9 +1,9 @@
 <div class="container grid-lg">
   <header class="navbar my-2">
     <section class="navbar-section">
-      <a href="/" class="navbar-brand mr-2">{{title}}</a>
+      <a routerLink="/" class="navbar-brand mr-2">{{title}}</a>
       <button class="btn btn-link" (click)="toggleMealsDisplay(!shouldDisplayMeals)">Meals</button>
-      <button class="btn btn-link">Drinks</button>
+      <a routerLink="/drinks" class="btn btn-link" >Drinks</a>
       <button class="btn btn-link">Desserts</button>
       <button class="btn btn-link">Contact</button>
     </section>
@@ -17,12 +17,6 @@
 
   <app-meals *ngIf="shouldDisplayMeals"></app-meals>
 
-  <div class="empty" *ngIf="shouldDisplayBlankState">
-    <p class="empty-title h5">Welcome to {{title}}</p>
-    <p class="empty-subtitle">The classiest burgers in town </p>
-    <div class="empty-action">
-      <button class="btn btn-primary">Click to see our MENU</button>
-    </div>
-  </div>
+ <router-outlet></router-outlet>
 
 </div>
