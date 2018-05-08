@@ -1,3 +1,21 @@
+<div class="my-2 p-2">
+  <h5>
+    {{item.name}}
+  </h5>
+</div>
+
+<div class="my-2 p-2">
+  <label for="userName">Username</label>
+  <input id="userName" ([ngModel])="userName"/>
+</div>
+
+<div class="my-2 p-2">
+  <button [disabled]="isDisabled">
+    Click me!
+  </button>
+</div>
+
+
 <div class="columns">
 
   <div class="column col-12 text-center">
@@ -18,5 +36,8 @@
     </div>
   </div>
 </div>
+
+
+
 
 
