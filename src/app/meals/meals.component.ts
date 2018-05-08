@@ -10,6 +10,7 @@ import {MealsService} from './meals.service';
 export class MealsComponent implements OnInit {
 
   public meals: any;
+  public searchTerm: string;
 
   constructor(private mealsService: MealsService) {
     this.getMeals();

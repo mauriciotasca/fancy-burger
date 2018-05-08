@@ -10,6 +10,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DrinksComponent } from './drinks/drinks.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ItemFilterPipe } from './shared/pipes/item-filter.pipe';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,10 +20,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ItemListComponent,
     DrinksComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ItemFilterPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule
   ],

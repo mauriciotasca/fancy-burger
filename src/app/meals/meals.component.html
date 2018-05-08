@@ -4,9 +4,20 @@
     <h2>Meals</h2>
   </div>
 
-  <div class="column col-9 col-sm-12">
-  <app-item-list [items]="meals"></app-item-list>
+  <div class="column col-9 col-sm-12 my-2">
+
+      <div class="input-group">
+        <input [(ngModel)]="searchTerm" type="text" class="form-input" placeholder="find what you need...">
+        <button class="btn btn-primary input-group-btn">search</button>
+      </div>
+
   </div>
+
+
+  <div class="column col-9 col-sm-12 my-2">
+    <app-item-list [items]="meals | itemFilter:searchTerm"></app-item-list>
+  </div>
+
 </div>
 
 
