@@ -1,0 +1,15 @@
+{
+  "data":[
+    {"thumbnail": "assets/img/wine.png", "name": "Red Wine", "description": "Duckhorn Merlot Napa Valley Three Palms Vineyard or Altesino Brunello di Montalcino Our 40th Harvest"},
+    {"thumbnail": "assets/img/beer.png", "name": "Beer", "description": "Anchor Steam, Pale Ale (Sierra Nevada), Sculpin (Ballast Point), Belgian White (Blue Moon)"},
+    {"thumbnail": "assets/img/soda.png", "name": "Soda", "description": "Coke, Diet Coke, Mountain Dew, Dr Pepper, Diet Dr Pepper Sprite, Fanta"},
+    {"thumbnail": "assets/img/water.png", "name": "Water", "description": "Tap water or FIJI"}
+  ]
+}
+
+
+
+
+
+
+
