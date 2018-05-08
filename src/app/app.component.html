@@ -2,7 +2,7 @@
   <header class="navbar my-2">
     <section class="navbar-section">
       <a routerLink="/" class="navbar-brand mr-2">{{title}}</a>
-      <button class="btn btn-link" (click)="toggleMealsDisplay(!shouldDisplayMeals)">Meals</button>
+      <a routerLink="meals" class="btn btn-link" >Meals</a>
       <a routerLink="/drinks" class="btn btn-link" >Drinks</a>
       <button class="btn btn-link">Desserts</button>
       <button class="btn btn-link">Contact</button>
@@ -14,8 +14,6 @@
       </div>
     </section>
   </header>
-
-  <app-meals *ngIf="shouldDisplayMeals"></app-meals>
 
  <router-outlet></router-outlet>
 
