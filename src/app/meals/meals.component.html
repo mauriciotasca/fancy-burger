@@ -5,8 +5,7 @@
   </div>
 
   <div class="column col-9 col-sm-12">
-  <app-item-list [items]="meals"></app-item-list>
+  <app-item-list (itemsChanged)="mealsListedHandler()" [items]="meals"></app-item-list>
   </div>
 </div>
-
 

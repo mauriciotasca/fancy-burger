@@ -27,4 +27,8 @@ export class MealsComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  mealsListedHandler() {
+    console.log('Meals have been listed by item-list component');
+  }
 }
