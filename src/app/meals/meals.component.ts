@@ -10,9 +10,6 @@ import {MealsService} from './meals.service';
 export class MealsComponent implements OnInit {
 
   public meals: any;
-  public userName = '';
-  public item = {name: 'Item 1'};
-  public isDisabled = true;
 
   constructor(private mealsService: MealsService) {
     this.getMeals();
