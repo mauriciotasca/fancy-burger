@@ -9,9 +9,7 @@ export class ItemListComponent implements OnInit, OnChanges {
   @Input() items: any[];
   @Output() itemsChanged?: EventEmitter<any>;
 
-  constructor() {
-    this.itemsChanged = new EventEmitter<any>();
-  }
+  constructor() { this.itemsChanged = new EventEmitter<any>(); }
 
   ngOnInit() {
   }
