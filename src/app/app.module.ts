@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { ActionTrackerDirective } from './shared/directives/action-tracker/action-tracker.directive';
 import { ItemDetailsComponent } from './shared/item-details/item-details.component';
 import {ItemDetailsService} from 'app/shared/item-details/item-details.service';
+import { FullListComponent } from './full-list/full-list.component';
+import { ItemFilterCompletePipe } from './shared/pipes/item-filter-complete.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {ItemDetailsService} from 'app/shared/item-details/item-details.service';
     NotFoundComponent,
     ItemFilterPipe,
     ActionTrackerDirective,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    FullListComponent,
+    ItemFilterCompletePipe
   ],
   imports: [
     BrowserModule,
