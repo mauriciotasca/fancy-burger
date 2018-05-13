@@ -5,10 +5,12 @@ import {mealsRoutes} from './meals/meals.routing';
 import {drinksRoutes} from './drinks/drinks.routing';
 import {homeRoutes} from './home/home.routing';
 import {notFoundRoutes} from './not-found/not-found.routing';
+import {itemDetailsRoutes} from './shared/item-details/item-detail.routing';
 
 const routes: Routes = [
   ...mealsRoutes,
   ...drinksRoutes,
+  ...itemDetailsRoutes,
   ...homeRoutes,
   ...notFoundRoutes,
 ];
