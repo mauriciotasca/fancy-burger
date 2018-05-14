@@ -12,7 +12,7 @@ export class MealsComponent implements OnInit {
   public meals: any;
   public userName = '';
   public item = {name: 'Item 1'};
-  public isDisabled = true;
+  public isDisabled = false;
 
   constructor(private mealsService: MealsService) {
     this.getMeals();
@@ -29,5 +29,13 @@ export class MealsComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  sendButtonClick($event) {
+    console.log('Clicked!');
+  }
+
+  logEvent($event) {
+    console.log($event);
   }
 }

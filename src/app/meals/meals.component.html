@@ -6,16 +6,18 @@
 
 <div class="my-2 p-2">
   <label for="userName">Username</label>
-  <input id="userName" ([ngModel])="userName"/>
+  <input id="userName" [(ngModel)]="userName"/>
+  <p *ngIf="!userName">No username!</p>
+  <p *ngIf="userName">{{userName}}</p>
 </div>
 
 <div class="my-2 p-2">
-  <button [disabled]="isDisabled">
+  <button [disabled]="isDisabled" (click)="sendButtonClick($event)">
     Click me!
   </button>
 </div>
 
-<div class="columns">
+<div class="columns" *ngIf="false">
 
   <div class="column col-12 text-center">
     <h2>Meals</h2>
