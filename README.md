@@ -1,3 +1,6 @@
+# Link to Angular Crash Course presentation
+## https://docs.google.com/presentation/d/18XYhUUiAMU1R00k1_DTwcDF2Kc3-u4WXJoBC1FUy9jA/edit?usp=sharing
+
 # FancyBurger
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
